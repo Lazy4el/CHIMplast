@@ -1,0 +1,904 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	background: #ecf0f1;
+}
+.wrapper{
+	margin: 		0 auto;
+	overflow: 		hidden;
+}
+div{
+	display:		block;
+}
+
+.container-not{
+	position: relative;
+	width: 100%;	
+	justify-content: space-between;
+}
+.img-href{
+	position: 		relative;	
+	margin: 		0 auto;
+	width: 			160px;
+	height: 		160px;
+}
+.img-href a{
+	width: 			160px;
+	height: 		160px;
+	display: 		block;
+	text-decoration:none;
+	font-weight: 	bold;
+	text-align: 	center;
+	font-family: 	'Open Sans', sans-serif;
+}
+.img-href img{
+	width: 100px;
+	height: 100px;
+}
+.logo-text{
+	font-style: 	normal;
+}
+.NH{
+	color: #385b95;
+}
+.P{
+	color: #62caec;
+}
+
+/*	transportation_services.php setting logo and contacnt	*/
+.fa-truck{
+	position: absolute;
+	padding-left: 10px;
+	padding-top: 10px;
+	font-size: 100px;
+	color: #0472ad;
+	animation: car_run 3s infinite linear;
+}
+@keyframes car_run{
+	0%{padding-left: 10px;
+		padding-top: 10px;}
+	25%{padding-left: 15px;
+		padding-top: 15px;}
+	50%{padding-left: 10px;
+		padding-top: 10px;}
+	75%{padding-left: 5px;
+		padding-top: 5px;}
+}
+.call_set{
+	float: right !important;
+}
+
+.top-info{
+	top: 0;
+	padding-top: 10px;
+	position: absolute;
+	width: 100%;
+}
+.top-info h3{
+	margin-bottom: 	5px;
+	font-size: 		20px;
+	font-weight: 	bold;
+	line-height: 	1.2;
+	color: 			#0984e3;
+}
+.top-info p{
+	margin-top: 	0;
+    font-size: 		20px;
+    color: 			#76797f;
+}
+.call{
+	float: left;
+}
+.email{
+	float: right;
+}
+.call, .email{
+	padding-left: 	40px;
+	padding-right: 	40px;
+	border-right: 	1px solid #e9ecf2;
+	border-left: 	1px solid #e9ecf2;
+}
+
+
+/*Навигация и оформление*/
+nav{
+	background: 	#f9f9f9;
+	width: 			100%;
+	float: 			left;
+}
+nav ul{
+	width: 100%;
+	margin: 		0px;
+	padding: 		0px;
+	list-style: 	none;
+}
+nav ul li{
+	display: 		inline-block;
+}
+nav ul li a{
+	padding: 		20px 15px;
+	display: 		block;
+	font-weight: 	bold;
+	font-size: 		15px;
+	text-align: 	center;
+	color: 			#2980b9 ;
+	text-decoration:none;
+	transition: .1s;
+}
+nav ul li a:hover{
+	color: #0097e6;
+}
+nav ul.main-menu li:last-child {
+	float:    		right;
+
+}
+.container{
+	width: 			1170px;
+	padding-right: 	15px;
+    padding-left: 	15px;
+    margin-right: 	auto;
+    margin-left: 	auto;
+	display: 		flex;
+	flex-wrap: 		wrap;
+}
+
+
+/*Всплыващее окно с отправкой формы*/
+.poput{
+	z-index: 		-10;
+	width:			100%;
+	height: 		100%;
+	background: 	rgba( 0, 0, 0, .6);
+	position: 		fixed;
+	opacity: 		0;
+	transition: 	.2;
+}
+.active-poput{
+	z-index: 		1000;
+	opacity: 		1;
+	transition: 	.2;
+
+}
+.bgfond{
+	margin: 		30px auto;
+	width: 			70%;
+	background: 	#fff;
+	box-shadow: 	0 0 20px #000;
+}
+.head-linear{
+	display: 		flex;
+	justify-content:space-between;
+	border-bottom: 	1px solid #e9ecf2 ;
+}
+.head-linear p{
+	font-size: 		12px;
+	font-weight: 	bold;
+	color: 			#7d7d7d;
+	margin: 		10px;
+}
+.contact-title{
+	color: 			#1b86c0;
+}
+.head-linear button{
+	outline: 		none;
+	margin: 		10px;
+	font-size: 		20px;
+	font-weight: 	bold;
+	text-align: 	center;
+	background: 	none;
+	border: 		none;
+	color: 			#7d7d7d;
+	transition: 	.5s;
+}
+.head-linear button:hover{
+	cursor: 		pointer;
+	color: 			#474747;
+}
+div h4{
+	text-align: 	center;
+}
+.form-contact{
+	padding: 		50px;
+	background: 	#ededed;
+}
+.form-contact input,.form-contact textarea {
+	padding-left: 	10px;
+	padding-top: 	10px;
+	padding-bottom: 10px;
+	margin-left: 	-5px;
+	width: 			100%;
+	border: 		none;
+	box-shadow: 	0 4px 7px #bababa;
+	border-radius: 	none;
+	background: 	#fff;
+	outline: 		none;
+	margin-top: 	15px;
+	margin-bottom: 	15px;
+	font-family: 'Open Sans', sans-serif;
+	resize: none;
+}
+.form-contact button{
+	padding-top: 	10px;
+	padding-bottom: 10px;
+	padding-left: 	0px;
+	padding-right: 	0px;
+	margin-top: 	15px;
+	width: 			100%;
+	border: 		none;
+	background: 	#1b86c0;
+	color: 			#fff;
+	font-weight: 	bold;
+	font-size: 		16px;
+	transition: 	.7s all;
+}
+.form-contact button:hover {
+	cursor: 		pointer;
+	background: 	#002D92;
+	box-shadow: 	0 4px 7px #bababa;
+}
+
+
+
+
+.main{
+	width: inherit;
+}
+
+/*Слайдер домайшней страницы*/
+.slider-home{
+	justify-content:  	center;
+	display: 			flex;
+	width: 				100%;
+	height: 			400px;
+}
+.slider-body{
+	padding: 			0;
+	overflow: 			hidden;
+	position: 			absolute;
+	width:  			1170px;
+	height: 			400px;
+}
+
+.slider ul li{
+	margin: 			0px;
+	padding: 			0px;
+	list-style-type: 	none;	
+}
+.bg-s {
+	background: 	#000;
+	position: 		absolute;
+	transition: 	1s;
+	justify-content:center;
+	flex-wrap: 		wrap;
+	display: 		flex;
+	width:			inherit;
+	height: 		400px;
+}
+.bg-s img{	
+	position: 		absolute;
+	width: 			inherit;
+	height: 		400px;
+}
+.bg-s p{
+	align-self: 	center;
+	position: 		absolute;
+	text-align: 	center;
+	padding: 		10px;
+	color: 			#fff;
+	width: 			700px;
+	margin: 		0px;
+	background: 	rgba( 0, 0, 0, .7); 
+}
+
+
+
+/*О комнании*/
+.company{
+	margin-top: 	15px;
+}
+.company-all{
+	justify-content: space-between;
+}
+
+.container h2{
+	height: 		25px;
+	padding-top: 	10px;
+	padding-bottom: 10px;
+	padding-right:  15px;
+	padding-left: 	15px;
+	color: 			#fff;
+	background:    	#fadf60;
+}
+.container h4{
+	margin-top: 	0;
+	height: 		50px;
+	color: 			#1b86c0;
+	font-size: 		20px;
+	font-weight: 	bold;
+	line-height:  	1.4;
+	text-align: 	left;
+}
+.lorem{
+	align-self: flex-start;
+	width: 445px;
+	margin-bottom: 	40px;
+	margin-left: 0;
+	padding-left: 0;
+}
+.company-text{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.company-image{
+	padding-top: 	20px;
+	overflow: 		hidden;
+	width: 			500px;
+	height: 		400px;	
+}
+.img-company img{
+	width: 300px;
+	height: 200px;
+	position: absolute;
+}
+.img-r-hover img{
+	width: 400px;
+	height: 300px;
+}
+.img-l-hover img{
+	position: relative;
+	z-index: 4;
+	padding-top: 35%;
+	padding-left: 40%;
+}
+.btn-company{
+	border-radius:  5px;
+	padding-top: 	15px;
+	padding-bottom: 15px;
+	padding-left: 	35px;
+	padding-right: 	35px;
+	text-decoration: none;
+	text-align: 	center;
+	background: 	#1b86c0;
+	color: 			#fff;
+	font-weight: 	bold;	
+}
+
+/*ПРОДУКЦИЯ*/	
+.production{
+	margin-top: 	15px;
+	margin-bottom: 	25px;
+}	
+.production h2{
+	text-align: 	center;
+	width: 			100%;
+	background:  	none;
+	color: 			#1b86c0;
+}
+.production h4{
+	text-align: 	center;
+	width:  		100%;
+	color: 			#4C4F54;
+	font-weight: 	bold;
+	line-height:  	1.4;
+}
+.production a{
+	border-radius: 5px;
+	padding-top: 	20px;
+	padding-bottom: 20px;
+	padding-left: 	100px;
+	padding-right: 	100px;
+	text-decoration: none;
+	text-align: 	center;
+	background: 	#1b86c0;
+	color: 			#fff;
+	font-weight: 	bold;	
+	margin-left: 	auto;
+	margin-right: 	auto;
+	letter-spacing: .15em;
+}
+/*блок с товарами*/
+.prduction-main{
+	height: 		300px;
+	display: 		flex;
+	flex-wrap: 		wrap;
+	width: 			100%;
+}
+.prduction-main a{
+	padding: 0;
+	margin: 0;
+	width: 0;
+	height: 0;
+	background: none;
+}
+.prduction-main h4{
+	margin: 0;
+}
+.tovat-text{
+	overflow: hidden;
+	height: 0;
+	color: 	#677078;
+	transition: .3s;
+}
+.tovar{
+	padding-left: 	1%;
+	padding-right: 	1%;
+	width: 			31%;
+	transition: .3s all; 
+}
+.tovar a h4{
+	border-radius: 5px; 
+	font-weight: bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #dfe6e9;
+	text-align: center;
+	background: linear-gradient(to top, #0984e3,#74b9ff);
+}
+.tovat-text p{
+	background: #81ecec;
+	padding: 10px;
+}
+.tovar:hover > .tovat-text{
+	overflow: visible;
+	height: 120px;
+	transition: .3s;
+} 
+
+
+
+/*Подвал котрый не меняется  и у всех страниц он один*/
+.footer{
+	width: 100%;
+	height: 500px;
+}
+.about-txt{
+	text-align: left;
+	color: #f7f1e3;
+	font-size: 16px;
+}
+.footer_Top_info{
+	width: 100%;
+	height: 400px;
+	background: #3150eb;
+}
+.copyringht{
+	width: 100%;
+	height: 100px;
+	background: #021675;
+}
+
+
+/*Верхняя часть подвала Логотип*/
+.info_Logo{
+	width: 30%;
+	margin-right: 5%;
+}
+.logos{
+	text-align: center;
+	width: 100%;
+	height:130px;
+}
+.footer-logo {
+	width: 130px;
+	height: 130px;
+	margin: 0 auto;
+}
+.footer-logo .NH{
+	color: #2c2c54;
+}
+.footer-logo li{
+	font-weight: bold;
+}
+/*Меню*/
+.menu{
+	width: 15%;
+}
+/* Телефон */
+#phone{
+	margin-left: 435px;
+	transition: 0.1s;
+	visibility: hidden;
+}
+#phone a {
+	text-decoration: underline;
+	font-size: 12px;
+	color: #636e72;
+}
+/*Продукция*/
+.f_production{
+	width: 20%;
+}
+/*Консультация*/
+.contact_info{
+	width: 30%;
+}
+.ft{
+	text-align: left;
+	padding-top: 100px;
+}
+.ft li{
+	list-style-type: none;
+	margin: 0;
+	padding-top: 15px;
+	color: #b2bec3;
+}
+.ft ul{
+	padding: 0;
+	margin: 0;
+}
+.ft a{
+	text-decoration: none;
+	margin: 0;
+	color: #b2bec3;
+	transition: .4s ;
+}
+.ft a:hover{
+	color: #dfe6e9;
+}
+.ft h3 {
+	color: #f7f1e3;
+	margin: 0;
+	padding: 0;
+}
+.botton-footer {
+	transition: .5s;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 5px;
+	background: #fdcb6e;
+}
+.botton-footer a{
+	color: #2d3436;
+}
+.botton-footer a:hover{
+	color: #fff;
+}
+.botton-footer:hover{
+	background: #ecc124;
+}
+ 
+/*Нижняя часть футера*/
+.fb{
+	padding-top:  30px;
+}
+.fb a{
+	color: #000;
+}
+/*Правая часть Инн*/
+.compainy_inn{
+	padding-right: 10%;
+	width: 45%;
+}
+/*Левая часть*/
+.col_f_l{
+	width: 20%;
+	text-align: right;
+}
+.col_f_r{
+	text-align: left;
+	width: 21%;
+}
+.col_f_l a,.col_f_r a{
+	text-decoration: none;
+	color: #b2bec3;
+	transition: .4s;
+}
+.col_f_l a:hover,.col_f_r a:hover{	
+	color: #dfe6e9;
+}
+
+.container span{
+	color: #b2bec3;
+	padding-right: 1em;
+	padding-left: 1em;
+}
+.compainy_inn{
+	font-size: 14px;
+	color: #b2bec3;
+}
+
+
+
+
+/* Own_productionn.php  and partner_products.php*/
+.semitrailer{
+	position: relative;
+	width: 100%;
+}
+.semitrailer p{
+
+	width: 69%;
+}
+.img_semitrailer img{
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+	margin-top: 22px;
+	right: 5px;
+	position: absolute;
+	width: 30%;
+	height: 95%;
+}
+
+.company_goods{
+	margin-top: 25px;
+	width: 100%;
+	position: relative;
+}
+.href {
+	margin-top: 15px;
+	position: relative;
+	display: flex;
+	width: 100%;
+	font-size: 12px;
+
+}
+.href p{
+	margin: 0px;
+	margin-left: 10px;
+	margin-right: 10px;
+	color:#95a5a6;
+	font-weight: bold;
+}
+.fa-home{
+	color: #34495e;
+	padding-right: 5px;
+	transition: .2s ;
+}
+.href a{
+	margin: 0px;
+	padding: 0px;
+	color:#34495e;
+	background: none;
+	transition: .2s ;
+}
+.href a:hover {
+	color:#2980b9;
+}
+.href a:hover > .fa-home{
+	color:#2980b9;
+}
+
+.company_goods h3{
+	text-align: center;
+	width: 100%;
+}
+.company-body{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.last_ul{
+	width: 33% !important;
+}
+.size-text-name{
+	padding-bottom: 15px !important;
+	padding-top: 	5px !important;
+	font-size: 		11px !important;
+}
+.company_goods ul{
+	color: #ecf0f1;
+	cursor: pointer;
+	height: 59px;
+	margin: 5px;
+	width: 100%;
+	background:linear-gradient( to top, #2980b9,#1e90ff) ;
+	list-style-type: none;
+	text-align: center;
+	overflow: hidden;	
+	padding-left: 0;
+	transition: .3s;
+	margin-bottom: 120px;
+}
+
+.company_goods li{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.company_goods h4{
+	color: #ecf0f1;	
+	font-size: 15px;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+}
+
+.company_goods h5{
+	margin: 0;
+	padding-top: 10px;
+	border-top:  1px solid #2ecc71;
+}
+.company_goods p:last-child{
+	font-weight: bold;
+}
+.company_goods ul:hover {	
+	height: 179px;
+	overflow: visible;
+	margin-bottom: 0px;
+}
+
+/*  Котакты  */
+.image-hats{
+	background: #fff;
+}
+
+.logos-cont{
+	padding-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+/* Строка с Данными и картами */
+.middle_collum{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+/* Картинка контактов */
+.image_cont{
+	width: 1200px;
+	height: 400px;
+	background:url(../img/Contact-Us.jpg) no-repeat center;
+	background-size: cover;
+}
+.contact_colum ul{
+	background: #dfe6e9;
+	width: 330px;
+	height: 350px;
+	list-style: none;
+	padding-left: 0px;
+}
+.contact_colum ul li{
+	font-size: 16px;
+	padding-top: 5px;
+	padding-left: 15px;
+
+}
+
+/* Текст и прочее наполнение под шапкой */
+.text h2 {
+	background: none;
+	text-align: center;
+	color: #2d3436;
+}
+.text p {
+	text-align: center;
+}
+.text-and-over .container{
+	display: flex;
+	justify-content: space-between;
+}
+	
+.submission{
+	width: 47%;
+	text-align: center;
+}
+.submission h2 {
+	text-align: center;
+}
+.submission .form-contact{
+	padding: 10px;
+}
+.maps_contact{
+	width: 47%;
+}
+.map_goo{
+	margin-left: 50%;
+	transform: translate(-50%);
+}
+
+
+/* О компании about_company */
+.about-company-img .container{
+	height: 450px;
+	background: url(../img/ba201809251436111561558.jpg) no-repeat center;
+	background-size: cover;
+}
+.about-company-text h2{
+	width: 100%;
+	text-align: center;
+}
+.about-company-text h3{
+	width: 100%;
+}
+.about-company-text p{
+	text-indent: 1.5em;
+}
+/*  transportation_services.php  */
+.info-transports {
+	width: 100%;
+}
+.info-transports h3{
+	width: 100%;
+	text-align: center;
+}
+
+.massage-transport{
+	width: 100%;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	background: #ffeaa7;
+}
+
+.active_modal{
+	top: 0	!important;
+	background: rgba(0, 0, 0, .7);
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 100;
+	margin: 0;	
+	padding: 0;
+	box-shadow: 	0 4px 7px #bababa;
+	transition: .3s;
+	
+}
+.terms_of_use, .privacy_policy{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: -100%;
+	overflow-y: auto;
+	overflow-x: hidden;
+	transition: .3s;
+
+	
+}
+
+.form_main{
+	margin-top: 5%;	
+	position: relative;
+	left: 50%;
+	transform: translate(-50%);
+	width: 70%;
+	background: white;
+	color: #76797f;
+	border-radius: 10px;
+}
+.tittle{
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	padding-top: 20px;
+	width: 95%;
+	height: 39px;
+	border-bottom: 1px solid #8b8b8b
+}
+.close_form_main{
+	right: 0;
+	position: absolute;
+	padding: 5px;
+}
+.text_form{
+	padding: 15px;
+	text-indent: 20px;
+}
+.text_form p{
+	text-indent: 20px;
+}
+
+.massage_complite{	
+	position: relative;
+	width: 100%;
+	height: 75px;
+	text-align: center;
+	transform: 1s;
+}
+.massage_complite li{
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background: linear-gradient(rgba(18%, 80%, 44%, .7) , #05b44e);
+
+	border-radius: 0 0 10px 10px;
+	color:#e0f0e7;
+
+	list-style: none;
+	text-shadow:0px 0px 5px #2d3436;
+}
